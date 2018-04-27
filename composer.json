@@ -1,0 +1,56 @@
+{
+    "name": "tuoitresoft/nganluong",
+    "type": "library",
+    "description": "Payment getway via NganLuong",
+    "keywords": [
+        "nganluong",
+        "laravel",
+        "ttsoft"
+    ],
+    "homepage": "https://github.com/tuoitresoft/nganluong",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dat Nguyen",
+            "email": "nguyentandat43@gmail.com",
+            "homepage": "https://github.com/tuoitresoft"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/config": "5.4.*|5.5.*|5.6.*",
+        "illuminate/contracts": "5.4.*|5.5.*|5.6.*",
+        "illuminate/http": "5.4.*|5.5.*|5.6.*",
+        "illuminate/support": "5.4.*|5.5.*|5.6.*",
+        "illuminate/translation": "5.4.*|5.5.*|5.6.*",
+        "illuminate/validation": "5.4.*|5.5.*|5.6.*",
+        "illuminate/view": "5.4.*|5.5.*|5.6.*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.3",
+        "mockery/mockery": "~0.9.4",
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ttsoft\\NganLuong\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ttsoft\\NganLuong\\Providers\\BaseServiceProvider"
+            ],
+            "aliases": {
+                "Nganluong": "Ttsoft\\NganLuong\\Facades\\NganluongFacade"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
