@@ -11,7 +11,7 @@ class BaseServiceProvider extends ServiceProvider
      * @var array
      */
     protected $commands = [
-        \Ttsoft\NganLuong\Console\NganLuongCommand::class,
+        \Ttsoft\Nganluong\Console\NganluongCommand::class,
     ];
     /**
      * The application's route middleware.
@@ -27,8 +27,8 @@ class BaseServiceProvider extends ServiceProvider
      */
     
     protected $registerProvider = [
-        \Ttsoft\NganLuong\Providers\BaseRouteServiceProvider::class,
-        \Ttsoft\NganLuong\Providers\BaseEventServiceProvider::class,
+        \Ttsoft\Nganluong\Providers\BaseRouteServiceProvider::class,
+        \Ttsoft\Nganluong\Providers\BaseEventServiceProvider::class,
     ];
     /**
      * Boot the service provider.
