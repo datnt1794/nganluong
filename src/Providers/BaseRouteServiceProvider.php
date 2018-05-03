@@ -51,7 +51,7 @@ class BaseRouteServiceProvider extends ServiceProvider
     {
         Route::middleware('web')
              ->namespace($this->namespace)
-             ->group(__DIR__.'/../Http/Routes.php');
+             ->group(__DIR__.'/../Http/Route.php');
     }
 
     /**
