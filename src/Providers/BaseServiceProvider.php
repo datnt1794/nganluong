@@ -47,6 +47,8 @@ class BaseServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__.'/../../resources/lang', 'nganluong');
 
         $this->mergeConfigFrom(__DIR__.'/../../config/nganluong.php', 'nganluong');
+
+        include __DIR__.'/../helpers.php';
     }
     /**
      * Register the service provider.
