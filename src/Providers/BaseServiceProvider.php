@@ -11,6 +11,7 @@ class BaseServiceProvider extends ServiceProvider
      * @var array
      */
     protected $commands = [
+        \Ttsoft\Nganluong\Console\NganluongCommand::class,
     ];
     /**
      * The application's route middleware.
@@ -26,8 +27,8 @@ class BaseServiceProvider extends ServiceProvider
      */
     
     protected $registerProvider = [
-        \Ttsoft\Nganluong\Providers\BaseRouteServiceProvider::class,
-        \Ttsoft\Nganluong\Providers\BaseEventServiceProvider::class,
+        \Ttsoft\Nganluong\Services\BaseRouteServiceProvider::class,
+        \Ttsoft\Nganluong\Services\BaseEventServiceProvider::class,
     ];
     /**
      * Boot the service provider.
@@ -38,7 +39,6 @@ class BaseServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        $this->registerHelpers();
 
         $this->registerAppServices();
 
@@ -46,7 +46,7 @@ class BaseServiceProvider extends ServiceProvider
 
         $this->loadTranslationsFrom(__DIR__.'/../../resources/lang', 'nganluong');
 
-        $this->mergeConfigFrom(__DIR__.'/../../config/config.php', 'nganluong');
+        $this->mergeConfigFrom(__DIR__.'/../../config/nganluong.php', 'nganluong');
     }
     /**
      * Register the service provider.
@@ -80,20 +80,6 @@ class BaseServiceProvider extends ServiceProvider
     protected function registerAppServices(){
         foreach ($this->registerProvider as $value) {
             $this->app->register($value);
-        }
-    }
-
-    /**
-     *
-     * Function Helper Autoload File
-     *
-     */
-    public function registerHelpers()
-    {
-        // Load the helpers in app/Http/helpers.php
-        if (file_exists($file = __DIR__.'/../helpers.php'))
-        {
-            require $file;
         }
     }
     

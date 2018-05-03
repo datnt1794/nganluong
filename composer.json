@@ -33,8 +33,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Ttsoft\\NganLuong\\": "src"
-        }
+            "Ttsoft\\Nganluong\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
