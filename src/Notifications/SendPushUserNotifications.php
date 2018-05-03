@@ -1,6 +1,6 @@
 <?php
 
-namespace Ttsoft\NganLuong\Notifications;
+namespace Ttsoft\Nganluong\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;

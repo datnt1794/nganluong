@@ -1,6 +1,6 @@
 <?php
 
-namespace Ttsoft\NganLuong\Contact\Http\Requests;
+namespace Ttsoft\Nganluong\Contact\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

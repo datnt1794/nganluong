@@ -1,14 +1,14 @@
 <?php
 
-namespace Ttsoft\NganLuong\Http\Controllers;
+namespace Ttsoft\Nganluong\Http\Controllers;
 
 use Illuminate\Http\Request;
 
 use App\Http\Controllers\Controller;
-use Ttsoft\NganLuong\Repositories\Eloquent\EloquentNganluongRepository;
+use Ttsoft\Nganluong\Repositories\Eloquent\EloquentNganluongRepository;
 use Maatwebsite\Excel\Facades\Excel;
-use Ttsoft\NganLuong\Exports\ContactExports;
-class ContactController extends Controller
+use Ttsoft\Nganluong\Exports\ContactExports;
+class NganluongController extends Controller
 {
 	/**
 	 *

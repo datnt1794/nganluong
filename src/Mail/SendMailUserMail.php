@@ -1,6 +1,6 @@
 <?php
 
-namespace Ttsoft\NganLuong\Mail;
+namespace Ttsoft\Nganluong\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;

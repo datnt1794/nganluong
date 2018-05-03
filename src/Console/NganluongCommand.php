@@ -1,6 +1,6 @@
 <?php
 
-namespace Ttsoft\NganLuong\Console;
+namespace Ttsoft\Nganluong\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;

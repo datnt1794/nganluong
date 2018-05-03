@@ -1,6 +1,6 @@
 <?php
 
-namespace Ttsoft\NganLuong\Events;
+namespace Ttsoft\Nganluong\Events;
 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;

@@ -1,6 +1,6 @@
 <?php 
 
-namespace Ttsoft\NganLuong\Exports;
+namespace Ttsoft\Nganluong\Exports;
 
 use Maatwebsite\Excel\Concerns\FromCollection;
 use TTSoft\Contact\Repositories\Eloquent\EloquentContactRepository;

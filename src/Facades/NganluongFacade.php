@@ -1,6 +1,6 @@
 <?php
 
-namespace Ttsoft\NganLuong\Facades;
+namespace Ttsoft\Nganluong\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

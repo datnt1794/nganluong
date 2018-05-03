@@ -1,6 +1,6 @@
 <?php
 
-namespace Ttsoft\NganLuong\Listeners;
+namespace Ttsoft\Nganluong\Listeners;
 
 use Ttsoft\NganLuong\NganLuongEvent;
 use Illuminate\Queue\InteractsWithQueue;
