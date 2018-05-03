@@ -27,8 +27,8 @@ class BaseServiceProvider extends ServiceProvider
      */
     
     protected $registerProvider = [
-        \Ttsoft\Nganluong\Services\BaseRouteServiceProvider::class,
-        \Ttsoft\Nganluong\Services\BaseEventServiceProvider::class,
+        \Ttsoft\Nganluong\Providers\BaseRouteServiceProvider::class,
+        \Ttsoft\Nganluong\Providers\BaseEventServiceProvider::class,
     ];
     /**
      * Boot the service provider.
