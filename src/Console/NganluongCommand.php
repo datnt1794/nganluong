@@ -11,7 +11,7 @@ class NganluongCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'user:setup';
+    protected $signature = 'nganluong:setup';
 
     /**
      * The console command description.

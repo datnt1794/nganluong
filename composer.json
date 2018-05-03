@@ -46,10 +46,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Ttsoft\\NganLuong\\Providers\\BaseServiceProvider"
+                "Ttsoft\\Nganluong\\Providers\\BaseServiceProvider"
             ],
             "aliases": {
-                "Nganluong": "Ttsoft\\NganLuong\\Facades\\NganluongFacade"
+                "Nganluong": "Ttsoft\\Nganluong\\Facades\\NganluongFacade"
             }
         }
     },
